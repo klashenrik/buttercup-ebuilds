@@ -1,0 +1,13 @@
+DEFINED_PHASES=install
+DESCRIPTION=NVIDIA Accelerated Deep Learning on GPU library
+EAPI=8
+HOMEPAGE=https://developer.nvidia.com/cudnn
+IUSE=+cuda11-6
+KEYWORDS=~amd64 ~amd64-linux
+LICENSE=NVIDIA-cuDNN
+RDEPEND=cuda11-6? ( =dev-util/nvidia-cuda-toolkit-11.6* )
+REQUIRED_USE=^^ ( cuda11-6 )
+RESTRICT=fetch
+SLOT=0/8
+SRC_URI=cuda11-6? ( cudnn-linux-x86_64-8.4.0.27_cuda11.6-archive.tar.xz )
+_md5_=696425a2111e4ac36c7d7f23a138548d
